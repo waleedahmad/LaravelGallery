@@ -1,4 +1,4 @@
-## Laravel Image Gallery build with React
+## Laravel Image Gallery built with React
 
 ![alt text](https://i.imgur.com/ScXQVLB.png)
 
