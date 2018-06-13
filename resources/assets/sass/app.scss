@@ -1,0 +1,102 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import '~toastr/toastr';
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+
+  .nav-bar{
+    padding: 50px;
+    .nav{
+      .nav-link{
+        font-size: 16px;
+        color:black !important;
+
+        &.active{
+          background-color:#343a40;
+          color:white !important;
+        }
+
+        &:hover{
+          background-color:#343a40;
+          color:white !important;
+        }
+      }
+    }
+  }
+
+  .no-images{
+    color:grey;
+    margin-top: 50px;
+  }
+
+  .uploader{
+
+    .uploadBtn{
+      margin-left: 10px;
+    }
+
+    .progress{
+      margin-top: 10px;
+    }
+
+    .images{
+      height: auto;
+      width: 100%;
+      margin-top: 20px;
+
+      .image{
+        position:relative;
+        height: 150px;
+        width: 150px;
+        overflow:auto;
+        display: inline-block;
+        float:left;
+        margin: 10px;
+
+        img{
+          width: 100%;
+        }
+
+        .close{
+          display: none;
+          position:absolute;
+          left: 10px;
+          top: 10px;
+
+        }
+
+        &:hover{
+          .close{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .gallery{
+    padding-bottom: 50px;
+
+    .deleteBtn{
+      z-index: 10;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+
+}
+
